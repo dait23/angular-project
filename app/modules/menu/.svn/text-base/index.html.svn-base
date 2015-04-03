@@ -1,0 +1,85 @@
+<!--<div ng-init="isCollapsed = false" body="isCollapsed = false" ng-class="{'opacity': loader}">-->
+<div ng-init="isCollapsed = false" body="isCollapsed = false">
+
+    <div class="menu" ng-class="{'tg': isCollapsed}">
+        <div class="contents">
+        
+            <button type="button" class="navbar-toggle collapsed" ng-click="isCollapsed = !isCollapsed" ng-hide="collapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <div class="h1">
+                <h1 ng-hide="!isCollapsed && !collapsed">
+    <!--                {{session.company.companyName}}-->
+
+
+                    <div style="padding: 2px 0 1px;">
+                        <span class="navbar-text"><strong>H</strong>ello</span>
+                        <p class="navbar-text" style="line-height: 18px;margin: 0;">{{session.session.userName}}</p>
+        <!--                <span class="navbar-text">{{currentdate | date: 'EEE dd/MM/yy HH:mm' : 'UTC'}} WIB</span>-->
+                    </div>
+                </h1>
+                <span ng-click="collapsed = !collapsed" ng-hide="!isCollapsed && !collapsed" class="pin-btn" ng-class="{'active': collapsed}"><i class="glyphicon glyphicon-pushpin"></i></span>
+            </div>
+            <script type="text/ng-template" id="accordions">
+
+                <div ng-class-odd="'odd'" ng-class-even="'even'" ng-if="!child.link && child.menu.length > 0">
+                    <accordion close-others="true">
+                        <accordion-group is-open="child.open" body="child.open = false">
+
+                            <accordion-heading>
+                                <div ng-class="{'active': child.open}">
+                                    <img ng-src="assets/img/icon-{{child.menuName | removeSpacesThenLowercase}}.png" class="menu-icon" ng-show="child.parent == '0' && !isCollapsed || child.parent == '0' &&  !collapsed" tooltip-placement="right" tooltip-append-to-body="true" tooltip="{{child.name}}" />
+                                    <img ng-src="assets/img/icon-{{child.menuName | removeSpacesThenLowercase}}.png" class="menu-icon" ng-show="child.parent == '0' && isCollapsed || child.parent == '0' && collapsed" />
+                                    <span ng-hide="!isCollapsed && !collapsed">{{child.name}}</span>
+                                    <i ng-hide="!isCollapsed && !collapsed" class="glyphicon" ng-class="{'glyphicon-chevron-down': child.open, 'glyphicon-chevron-right': !child.open}"></i>
+                                </div>
+                            </accordion-heading>
+
+                            <div ng-repeat="child in child.menu track by $index | orderBy : child.order">
+                                <div ng-include="'accordions'"></div>
+                            </div>
+                        </accordion-group>
+                    </accordion>
+                </div>
+
+                <div ng-class-odd="'odd'" ng-class-even="'even'" ng-if="child.link || child.modal">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" ui-sref="{{child.link}}" ng-if="child.link">
+                                    <div ng-class="{'active': child.open}">
+                                        <img ng-src="assets/img/icon-{{child.menuName | removeSpacesThenLowercase}}.png" class="menu-icon" ng-show="child.parent == '0' && !isCollapsed || child.parent == '0' && !collapsed" tooltip-placement="right" tooltip-append-to-body="true" tooltip="{{child.name}}" />
+                                        <img ng-src="assets/img/icon-{{child.menuName | removeSpacesThenLowercase}}.png" class="menu-icon" ng-show="child.parent == '0' && isCollapsed || child.parent == '0' && collapsed" />
+                                        <span ng-hide="!isCollapsed && !collapsed">{{child.name}}</span>
+                                    </div>
+                                </a>
+
+                                <a class="accordion-toggle" ng-controller="modalCtrl" ng-click="open('', child.modal, child.modal)" ng-if="child.modal">
+                                    <div ng-class="{'active': child.open}">
+                                        <img ng-src="assets/img/icon-{{child.menuName | removeSpacesThenLowercase}}.png" class="menu-icon" ng-show="child.parent == '0' && !isCollapsed || child.parent == '0' && !collapsed" tooltip-placement="right" tooltip-append-to-body="true" tooltip="{{child.name}}" />
+                                        <img ng-src="assets/img/icon-{{child.menuName | removeSpacesThenLowercase}}.png" class="menu-icon" ng-show="child.parent == '0' && isCollapsed || child.parent == '0' && collapsed" />
+                                        <span ng-hide="!isCollapsed && !collapsed">{{child.name}}</span>
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                <div>
+            </script>
+
+            <div style="margin: 10px;" ng-click="isCollapsed || (isCollapsed = true)">
+                <div ng-repeat="child in menu.menu track by $index | orderBy : child.order" class="menu-item">
+                    <div ng-include="'accordions'"></div>
+                </div>
+
+                <div ng-repeat="child in menu.rightmenu track by $index | orderBy : child.order" class="menu-item">
+                    <div ng-include="'accordions'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

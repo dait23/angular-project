@@ -1,0 +1,16 @@
+<div ng-controller="bodyCtrl" ng-mousemove="idle()" ng-keypress="idle()">
+    <div>
+
+        <div class="main">
+
+        </div>
+
+        <div class="footer">
+
+            <news></news>
+
+            <footer></footer>
+
+        </div>
+    </div>
+</div>

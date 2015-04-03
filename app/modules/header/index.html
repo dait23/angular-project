@@ -1,0 +1,27 @@
+<div class="loading-spiner-holder" ng-show="loader"><div class="loading-spiner">LOADING</div></div>
+<div class="expired-spiner-holder" ng-show="ssn"><div class="expired-spiner">YOUR SESSION WILL BE EXPIRED <br><span class="btn btn-primary" ng-click="resettime()">CONTINUE</span></div></div>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+       
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#!/"><img src="images/skin/LogoBG.png" /></a>
+        </div>
+        
+        <div class="navbar-right" style="margin: 5px 0 0; text-align:right;">
+            <div>
+                <span class="navbar-text" style="font-size: 22px">{{session.company.companyName}}</span>
+            </div>
+        </div>
+<!--
+        <div class="navbar-right" style="width: 300px; margin: 10px 0;">
+            <img style="border-radius: 1000px; height: 60px; width: 60px; float: left; border: 3px solid #fff; background: #ddd; margin-right: 10px;">
+            <div>
+                <span class="navbar-text"><strong>H</strong>ello</span>
+                <p class="navbar-text">{{session.session.userName}}</p>
+                <span class="navbar-text">{{currentdate | date: 'EEE dd/MM/yy HH:mm' : 'UTC'}} WIB</span>
+            </div>
+        </div>
+-->
+    </div>
+</nav>

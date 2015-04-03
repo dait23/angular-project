@@ -1,0 +1,371 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/exoduzInventory/!svn/ver/2815/public/admin/app/form
+END
+master_employee_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/exoduzInventory/!svn/ver/2289/public/admin/app/form/master_employee_detail.html
+END
+packing.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/exoduzInventory/!svn/ver/2150/public/admin/app/form/packing.html
+END
+master_warehouse.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/exoduzInventory/!svn/ver/2324/public/admin/app/form/master_warehouse.html
+END
+master_sales_order_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_sales_order_type.html
+END
+master_item_sub_category.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/exoduzInventory/!svn/ver/2304/public/admin/app/form/master_item_sub_category.html
+END
+master_company.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/exoduzInventory/!svn/ver/2500/public/admin/app/form/master_company.html
+END
+receive.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/exoduzInventory/!svn/ver/2192/public/admin/app/form/receive.html
+END
+master_reason_return_sales_order.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2821/public/admin/app/form/master_reason_return_sales_order.html
+END
+picking.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/exoduzInventory/!svn/ver/2169/public/admin/app/form/picking.html
+END
+storing.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/exoduzInventory/!svn/ver/2259/public/admin/app/form/storing.html
+END
+master_purchase_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_purchase_type.html
+END
+master_bank.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2279/public/admin/app/form/master_bank.html
+END
+master_color.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/exoduzInventory/!svn/ver/2283/public/admin/app/form/master_color.html
+END
+master_user.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2547/public/admin/app/form/master_user.html
+END
+account_payable.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/exoduzInventory/!svn/ver/2760/public/admin/app/form/account_payable.html
+END
+controller.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/exoduzInventory/!svn/ver/2903/public/admin/app/form/controller.js
+END
+invoice_return.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/exoduzInventory/!svn/ver/2132/public/admin/app/form/invoice_return.html
+END
+invoice.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/exoduzInventory/!svn/ver/2136/public/admin/app/form/invoice.html
+END
+master_employee_status.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/exoduzInventory/!svn/ver/2293/public/admin/app/form/master_employee_status.html
+END
+master_item_others.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/2301/public/admin/app/form/master_item_others.html
+END
+return_purchase_order.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/2906/public/admin/app/form/return_purchase_order.html
+END
+purchase_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/exoduzInventory/!svn/ver/2798/public/admin/app/form/purchase_list.html
+END
+master_item_category.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/exoduzInventory/!svn/ver/2293/public/admin/app/form/master_item_category.html
+END
+master_store.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_store.html
+END
+master_branch.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/exoduzInventory/!svn/ver/2279/public/admin/app/form/master_branch.html
+END
+journal.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/exoduzInventory/!svn/ver/2591/public/admin/app/form/journal.html
+END
+master_customer.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/exoduzInventory/!svn/ver/2505/public/admin/app/form/master_customer.html
+END
+master_role.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2741/public/admin/app/form/master_role.html
+END
+account_receivable.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/2814/public/admin/app/form/account_receivable.html
+END
+master_salesman.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/exoduzInventory/!svn/ver/2322/public/admin/app/form/master_salesman.html
+END
+master_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/exoduzInventory/!svn/ver/2502/public/admin/app/form/master_supplier.html
+END
+purchase_approval.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/exoduzInventory/!svn/ver/2617/public/admin/app/form/purchase_approval.html
+END
+return.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/exoduzInventory/!svn/ver/2225/public/admin/app/form/return.html
+END
+master_menu.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2374/public/admin/app/form/master_menu.html
+END
+billing.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/exoduzInventory/!svn/ver/2792/public/admin/app/form/billing.html
+END
+master_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2282/public/admin/app/form/master_city.html
+END
+master_group_account.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/exoduzInventory/!svn/ver/2458/public/admin/app/form/master_group_account.html
+END
+transfer.html
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/exoduzInventory/!svn/ver/1985/public/admin/app/form/transfer.html
+END
+master_size.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_size.html
+END
+master_journal_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/exoduzInventory/!svn/ver/2344/public/admin/app/form/master_journal_type.html
+END
+master_reason_return_purchase_order.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2861/public/admin/app/form/master_reason_return_purchase_order.html
+END
+selling_order.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/exoduzInventory/!svn/ver/2254/public/admin/app/form/selling_order.html
+END
+master_payment_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_payment_type.html
+END
+master_account_receivable_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2345/public/admin/app/form/master_account_receivable_type.html
+END
+master_unit.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2324/public/admin/app/form/master_unit.html
+END
+master_vehicle.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/exoduzInventory/!svn/ver/2335/public/admin/app/form/master_vehicle.html
+END
+damage_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2141/public/admin/app/form/damage_item.html
+END
+sales_order_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/exoduzInventory/!svn/ver/2874/public/admin/app/form/sales_order_list.html
+END
+receive_by_warehouse.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/exoduzInventory/!svn/ver/2206/public/admin/app/form/receive_by_warehouse.html
+END
+master_division.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/exoduzInventory/!svn/ver/2284/public/admin/app/form/master_division.html
+END
+master_chart_of_accounts.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/exoduzInventory/!svn/ver/2873/public/admin/app/form/master_chart_of_accounts.html
+END
+master_province.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_province.html
+END
+master_item_location.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/exoduzInventory/!svn/ver/2294/public/admin/app/form/master_item_location.html
+END
+master_brand.html
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/exoduzInventory/!svn/ver/2281/public/admin/app/form/master_brand.html
+END
+master_bank_account.html
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/exoduzInventory/!svn/ver/2351/public/admin/app/form/master_bank_account.html
+END
+master_account_payable_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/exoduzInventory/!svn/ver/2345/public/admin/app/form/master_account_payable_type.html
+END
+master_reason_transfer.html
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_reason_transfer.html
+END
+sales_order_approval.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/exoduzInventory/!svn/ver/2228/public/admin/app/form/sales_order_approval.html
+END
+master_driver.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/exoduzInventory/!svn/ver/2285/public/admin/app/form/master_driver.html
+END
+master_regency.html
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/exoduzInventory/!svn/ver/2319/public/admin/app/form/master_regency.html
+END
+master_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/2308/public/admin/app/form/master_item.html
+END

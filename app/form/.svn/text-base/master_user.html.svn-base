@@ -1,0 +1,155 @@
+<form name="form.gridEditor" ng-submit="submit(form.data[formLabel.column[0].id])" novalidate ng-controller="masterUserCtrl">
+    <tabset>
+        <tab active="tab.active" disabled="tab.disabled">
+<!--
+            <tab-heading>
+                {{formLabel.title}}
+            </tab-heading>
+-->
+
+            <div class="panel clean">
+                <div>
+                    <input type="hidden" name="{{formLabel.column[0].id}}" ng-model="form.data[formLabel.column[0].id]">
+
+                    <div class="row rows">
+
+                        <div class="medium-6">
+                            <div class="well">
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData1.$invalid && form.gridEditor.formData1.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[1].id}}">{{formLabel.column[1].name}} <sup class="required" ng-if="formLabel.column[1].mandatory">*</sup></label></div>
+                                    <div class="input-content"><input type="text" name="formData1" id="input{{formLabel.column[1].id}}" class="form-control" placeholder="{{formLabel.column[1].name}}" ng-model="form.data[formLabel.column[1].id]" ng-required="formLabel.column[1].mandatory" ng-minlength="{{formLabel.column[1].minLength}}" ng-maxlength="{{formLabel.column[1].maxLength}}" ng-readonly="formLabel.column[1].readonly == '1'"></div>
+                                </div>
+
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData2.$invalid && form.gridEditor.formData2.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[2].id}}">{{formLabel.column[2].name}} <sup class="required" ng-if="formLabel.column[2].mandatory">*</sup></label></div>
+                                    <div class="input-content"><input type="text" name="formData2" id="input{{formLabel.column[2].id}}" class="form-control" placeholder="{{formLabel.column[2].name}}" ng-model="form.data[formLabel.column[2].id]" ng-required="formLabel.column[2].mandatory" ng-minlength="{{formLabel.column[2].minLength}}" ng-maxlength="{{formLabel.column[2].maxLength}}" ng-readonly="formLabel.column[2].readonly == '1'"></div>
+                                </div>
+
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData3.$invalid && form.gridEditor.formData3.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[3].id}}">{{formLabel.column[3].name}} <sup class="required" ng-if="formLabel.column[3].mandatory">*</sup></label></div>
+                                    <div class="input-content"><input type="password" name="formData3" id="input{{formLabel.column[3].id}}" class="form-control" placeholder="{{formLabel.column[3].name}}" ng-model="form.data[formLabel.column[3].id]" ng-required="formLabel.column[3].mandatory" ng-minlength="{{formLabel.column[3].minLength}}" ng-maxlength="{{formLabel.column[3].maxLength}}" ng-readonly="formLabel.column[3].readonly == '1'"></div>
+                                </div>
+
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData4.$invalid && form.gridEditor.formData4.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[4].id}}">{{formLabel.column[4].name}} <sup class="required" ng-if="formLabel.column[4].mandatory">*</sup></label></div>
+                                    <div class="input-content">
+                                        <div class="btn-group block">
+                                            <label class="btn btn-default" name="formData4" ng-model="form.data.userFirstLogin" btn-radio="'1'" ng-required="formLabel.column[4].mandatory" ng-readonly="formLabel.column[4].readonly == '1'"><i class="glyphicon glyphicon-ok"></i></label>
+                                            <label class="btn btn-default btn-no" name="formData4" ng-model="form.data.userFirstLogin" btn-radio="'0'" ng-required="formLabel.column[4].mandatory" ng-readonly="formLabel.column[4].readonly == '1'"><i class="glyphicon glyphicon-remove"></i></label>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData11.$invalid && form.gridEditor.formData11.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[11].id}}">{{formLabel.column[11].name}} <sup class="required" ng-if="formLabel.column[11].mandatory">*</sup></label></div>
+                                    <div class="input-content">
+                                        <div class="btn-group block">
+                                            <label class="btn btn-default" name="formData11" ng-model="form.data.userNonActive" btn-radio="'0'" ng-required="formLabel.column[11].mandatory" ng-readonly="formLabel.column[11].readonly == '1'"><i class="glyphicon glyphicon-ok"></i></label>
+                                            <label class="btn btn-default btn-no" name="formData11" ng-model="form.data.userNonActive" btn-radio="'1'" ng-required="formLabel.column[11].mandatory" ng-readonly="formLabel.column[11].readonly == '1'"><i class="glyphicon glyphicon-remove"></i></label>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="medium-6">
+                            <div class="well">
+                            
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData5.$invalid && form.gridEditor.formData5.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[5].id}}">{{formLabel.column[5].name}} <sup class="required" ng-if="formLabel.column[5].mandatory">*</sup></label></div>
+                                    <div class="input-content"><input type="text" name="formData5" id="input{{formLabel.column[5].id}}" class="form-control date" placeholder="{{formLabel.column[5].name}}" ng-model="form.data[formLabel.column[5].id]" ng-required="formLabel.column[5].mandatory" ng-disabled="formLabel.column[5].readonly == '1'" datepicker-popup="dd/MM/yyyy" is-open="dateStartOpen"  ng-focus="dateStartOpen = true" show-button-bar="false" ng-readonly="dateStartOpen == true" ng-keydown="dateKeyDown($event)"></div>
+                                </div>
+
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData6.$invalid && form.gridEditor.formData6.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[6].id}}">{{formLabel.column[6].name}} <sup class="required" ng-if="formLabel.column[6].mandatory">*</sup></label></div>
+                                    <div class="input-content"><input type="text" name="formData6" id="input{{formLabel.column[6].id}}" class="form-control date" placeholder="{{formLabel.column[6].name}}" ng-model="form.data[formLabel.column[6].id]" ng-required="formLabel.column[6].mandatory" ng-disabled="formLabel.column[6].readonly == '1'" datepicker-popup="dd/MM/yyyy" is-open="dateEndOpen"  ng-focus="dateEndOpen = true" show-button-bar="false" ng-readonly="dateEndOpen == true" ng-keydown="dateKeyDown($event)"></div>
+                                </div>
+
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData7.$invalid && form.gridEditor.formData7.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[7].id}}">{{formLabel.column[7].name}} <sup class="required" ng-if="formLabel.column[7].mandatory">*</sup></label></div>
+                                    <div class="input-content">
+                                        <div class="btn-group block">
+                                            <label class="btn btn-default" name="formData7" ng-model="form.data.userLanguage" btn-radio="'1'" ng-required="formLabel.column[7].mandatory" ng-readonly="formLabel.column[7].readonly == '1'">{{formLabel.column[7].selector[1]}}</label>
+                                            <label class="btn btn-default" name="formData7" ng-model="form.data.userLanguage" btn-radio="'2'" ng-required="formLabel.column[7].mandatory" ng-readonly="formLabel.column[7].readonly == '1'">{{formLabel.column[7].selector[2]}}</label>
+                                            <label class="btn btn-default" name="formData7" ng-model="form.data.userLanguage" btn-radio="'3'" ng-required="formLabel.column[7].mandatory" ng-readonly="formLabel.column[7].readonly == '1'">{{formLabel.column[7].selector[3]}}</label>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                           
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData12.$invalid && form.gridEditor.formData12.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[12].id}}">{{formLabel.column[12].name}} <sup class="required" ng-if="formLabel.column[12].mandatory">*</sup></label></div>
+                                    <div class="input-content"><select name="formData12" id="input{{formLabel.column[12].id}}" class="form-control" placeholder="{{formLabel.column[12].name}}" ng-model="form.data[formLabel.column[12].id]" ng-required="formLabel.column[12].mandatory" ng-minlength="{{formLabel.column[12].minLength}}" ng-maxlength="{{formLabel.column[12].maxLength}}" ng-readonly="formLabel.column[12].readonly == '1'" ng-options="n.roleId as n.roleName for n in role"></select></div>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formData9.$invalid && form.gridEditor.formData9.$dirty, 'hidden': formLabel.column[9].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column[9].id}}">{{formLabel.column[9].name}} <sup class="required" ng-if="formLabel.column[9].mandatory == '1'">*</sup></label></div>
+                                            <span class="input-content">{{form.data[formLabel.column[9].id]}}</span>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                
+                                    <div class="col-sm-6">
+
+                                            <div class="form-group" ng-class="{'has-error': form.itemForm.formData10.$invalid && form.itemForm.formData10.$dirty, 'hidden': formLabel.column[10].show != '1'}">
+                                                <div class="label-content"><label for="input{{formLabel.column[10].id}}">{{formLabel.column[10].name}} <sup class="required" ng-if="formLabel.column[10].mandatory == '1'">*</sup></label></div>
+                                                <span class="input-content">{{form.data[formLabel.column[10].id]}}</span>
+                                            </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="label-content"><label for="input{{formLabel.column[13].id}}">{{formLabel.column[13].name}}</label></div>
+                        <div class="btn-groups block">
+<!--                            <span ng-if="$parent.form.data" ng-init="$parent.form.data[formLabel.column[13].id] = $parent.form.data[formLabel.column[13].id] || []"></span>-->
+                            <label class="btn btn-default col-xs-4 text-left" ng-repeat="n in company" ng-class="{'btn-success': form.data[formLabel.column[13].id].indexOf(n.compId) > -1}">
+                                <input type="checkbox" value="{{n.compId}}" ng-checked="form.data[formLabel.column[13].id].indexOf(n.compId) > -1" ng-click="toggleCompany(n.compId, form.data[formLabel.column[13].id])" name="{{formLabel.column[13].id}}[]" id="input{{formLabel.column[13].id}}{{n.compId}}">
+                                <label for="input{{formLabel.column[13].id}}{{n.compId}}">{{n.compName}}</label>
+                            </label>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </tab>
+    </tabset>
+                
+    <div class="button-container">
+        <button type="submit" class="btn btn-primary" ng-disabled="form.gridEditor.$invalid" ng-if="!form.data[formLabel.column[0].id] && gridData.permission.new == 1">Save</button>
+        <button type="submit" class="btn btn-primary" ng-disabled="form.gridEditor.$invalid" ng-if="form.data[formLabel.column[0].id] && gridData.permission.edit == 1">Update</button>
+        <button type="button" class="btn btn-warning" ng-if="form.data[formLabel.column[0].id] && gridData.permission.delete == 1" ng-really-click="delete(form.data[formLabel.column[0].id])">Delete</button>
+
+        <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-if="form.data[formLabel.column[0].id]" ng-click="reset()">Cancel</button>                
+        <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-if="!form.data[formLabel.column[0].id]" ng-click="reset()">Clear</button>
+    </div>
+
+    <div class="clearfix"></div>
+</form>

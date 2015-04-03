@@ -1,0 +1,270 @@
+<form name="form.gridEditor" ng-submit="submit(form.data[formLabel.column[0].id])" novalidate ng-controller="sellingOrder">
+    <tabset>
+        <tab active="tab.active" disabled="tab.disabled">
+            <tab-heading>
+                {{formLabel.title}}
+            </tab-heading>
+
+            <div class="panel">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="datatable">
+
+                            <div class="table table-striped table-border table-hover pull-left">
+                                <div class="tr">
+                                    <div class="th" ng-repeat="column in formLabel.column.detail" ng-show="column.show">
+                                        <div class="resizes{{$index}}" style="width:{{column.width}}px">
+
+                                            <div class="labelwrapper">
+
+                                                {{column.name}}
+                                            </div>
+
+                                            <div class="resize" style="z-index: 90;" resizer="vertical" resizer-x="resizes{{$index}}"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span >
+                                    <span class="block" ng-repeat="row in form.data.detail track by $index">
+                                        <div class="tr" ng-class="{deleting:row.deleting, selected:row.selected}" ng-class-odd="'odd'" ng-class-even="'even'" class="status-{{row.status}} rowWrapper" ng-click="copy(row)">
+                                            <div class="td" ng-show="formLabel.column.detail[0].show">
+                                                <div style="width:{{formLabel.column.detail[0].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[0].id] != ''" class="twrapper">
+
+                                                        <span class="tWrap text-center block">
+                                                            {{$index + 1}}
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[1].show">
+                                                <div style="width:{{formLabel.column.detail[1].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[1].id] != ''" class="twrapper">
+
+
+                                                            {{row[formLabel.column.detail[1].id]}}
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[2].show">
+                                                <div style="width:{{formLabel.column.detail[2].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[2].id] != ''" class="twrapper">
+
+
+                                                            {{row[formLabel.column.detail[2].id]}}
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[3].show">
+                                                <div style="width:{{formLabel.column.detail[3].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[3].id] != ''" class="twrapper">
+
+                                                        <span class="tWrap text-right block">
+                                                            {{row[formLabel.column.detail[3].id] | currency:"":2}}
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[4].show">
+                                                <div style="width:{{formLabel.column.detail[4].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[4].id] != ''" class="twrapper">
+
+                                                        <span class="tWrap text-right block">
+                                                            {{row[formLabel.column.detail[4].id]}}
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[5].show">
+                                                <div style="width:{{formLabel.column.detail[5].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[5].id] != ''" class="twrapper">
+
+                                                        <span class="tWrap text-right block">
+                                                            {{row[formLabel.column.detail[5].id]}}
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[6].show">
+                                                <div style="width:{{formLabel.column.detail[6].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[6].id] != ''" class="twrapper">
+
+                                                        <span class="tWrap text-right block">
+                                                            {{row[formLabel.column.detail[6].id]}}
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[7].show">
+                                                <div style="width:{{formLabel.column.detail[7].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[7].id] != ''" class="twrapper">
+
+                                                        <span class="tWrap block">
+                                                            {{row[formLabel.column.detail[7].id]}}
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="td" ng-show="formLabel.column.detail[8].show">
+                                                <div style="width:{{formLabel.column.detail[8].width}}px;padding: 20px 8px;">
+                                                    <div ng-if="row[formLabel.column.detail[8].id] != ''" class="twrapper">
+
+                                                        <span class="tWrap block">
+                                                            {{row[formLabel.column.detail[8].id]}}
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </span>
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div>
+                            <input type="hidden" name="{{formLabel.column[0].id}}" ng-model="form.data[formLabel.column[0].id]">
+
+                            <div class="row">
+
+                                <div class="well">
+                                    <div class="form-group" ng-class="{'has-error': form.gridEditor.formData1.$invalid && form.gridEditor.formData1.$dirty, 'hidden': formLabel.column[1].show != '1'}">
+                                        <div class="label-content"><label for="input{{formLabel.column[1].id}}">{{formLabel.column[1].name}} <sup class="required" ng-if="formLabel.column[1].mandatory == '1'">*</sup></label></div>
+                                        <div class="input-content"><input type="text" name="formData1" id="input{{formLabel.column[1].id}}" class="form-control date" placeholder="{{formLabel.column[1].name}}" ng-model="form.data[formLabel.column[1].id]" ng-required="formLabel.column[1].mandatory == '1'" ng-minlength="{{formLabel.column[1].minLength}}" ng-maxlength="{{formLabel.column[1].maxLength}}" ng-disabled="formLabel.column[1].readonly == '1' || form.data.rihVoid == '1' || form.data.rihStatus == '1' || form.data.rihStatus == '2'" datepicker-popup="dd/MM/yyyy" is-open="dateStartOpen" ng-focus="dateStartOpen = true" ng-click="dateStartOpen = true" show-button-bar="false" ng-readonly="dateStartOpen == true || form.data[formLabel.column[1].id]" ng-keydown="dateKeyDown($event)"></div>
+                                    </div>
+
+                                    <div class="form-group" ng-class="{'has-error': form.gridEditor.formData2.$invalid && form.gridEditor.formData2.$dirty, 'hidden': formLabel.column[2].show != '1'}">
+                                        <div class="label-content"><label for="input{{formLabel.column[2].id}}">{{formLabel.column[2].name}} <sup class="required" ng-if="formLabel.column[2].mandatory == '1'">*</sup></label></div>
+                                        <div class="input-content"><input type="text" name="formData2" id="input{{formLabel.column[2].id}}" class="form-control" placeholder="{{formLabel.column[2].name}}" ng-model="form.data[formLabel.column[2].id]" ng-required="formLabel.column[2].mandatory == '1'" ng-minlength="{{formLabel.column[2].minLength}}" ng-maxlength="{{formLabel.column[2].maxLength}}" ng-readonly="formLabel.column[2].readonly == '1'" ng-disabled="form.data.rihVoid == '1' || form.data.rihStatus == '1' || form.data.rihStatus == '2'"></div>
+                                    </div>
+
+                                    <div class="form-group" ng-class="{'has-error': form.gridEditor.formData3.$invalid && form.gridEditor.formData3.$dirty, 'hidden': formLabel.column[3].show != '1'}">
+                                        <div class="label-content"><label for="input{{formLabel.column[3].id}}">{{formLabel.column[3].name}} <sup class="required" ng-if="formLabel.column[3].mandatory == '1'">*</sup></label></div>
+                                        <div class="input-content"><input type="text" name="formData3" id="input{{formLabel.column[3].id}}" class="form-control" placeholder="{{formLabel.column[3].name}}" ng-model="form.data[formLabel.column[3].id]" ng-required="formLabel.column[3].mandatory == '1'" ng-disabled="formLabel.column[3].readonly == '1' || form.data.rihVoid == '1' || form.data.rihStatus == '1' || form.data.rihStatus == '2'"></div>
+                                    </div>
+                                    
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <ng-form name="form.itemForm" ng-hide="form.data.rihdVoid == '1' || form.data.rihdStatus == '1' || form.data.rihdStatus == '2'">
+                                    <div class="well" ng-init="form.detail = {}">
+                                        <input type="hidden" name="{{formLabel.column.detail[0].id}}" ng-model="form.detail[formLabel.column.detail[0].id]">
+
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formData5.$invalid && form.gridEditor.formData5.$dirty, 'hidden': formLabel.column[5].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column[5].id}}">{{formLabel.column[5].name}} <sup class="required" ng-if="formLabel.column[5].mandatory == '1'">*</sup></label></div>
+                                            <div class="input-content"><input type="text" name="formData5" id="input{{formLabel.column[5].id}}" class="form-control date" placeholder="{{formLabel.column[5].name}}" ng-model="form.data[formLabel.column[5].id]" ng-required="formLabel.column[5].mandatory == '1'" ng-disabled="formLabel.column[5].readonly == '1' || form.data.rihVoid == '1' || form.data.rihStatus == '1' || form.data.rihStatus == '2'" datepicker-popup="dd/MM/yyyy" is-open="dateROOpen" ng-focus="dateROOpen = true" ng-click="dateROOpen = true" show-button-bar="false" ng-readonly="dateROOpen == true || form.data[formLabel.column[1].id]" ng-keydown="dateKeyDown($event)"></div>
+                                        </div>
+                                        
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formDetail1.$invalid && form.gridEditor.formDetail1.$dirty, 'hidden': formLabel.column.detail[1].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column.detail[1].id}}">{{formLabel.column.detail[1].name}} <sup class="required" ng-if="formLabel.column.detail[1].mandatory == '1'">*</sup></label></div>
+                                            <div class="input-content"><input type="text" name="formDetail1" id="input{{formLabel.column.detail[1].id}}" class="form-control" placeholder="{{formLabel.column.detail[1].name}}" ng-model="form.detail[formLabel.column.detail[1].id]" ng-required="formLabel.column.detail[1].mandatory == '1' && formItem" ng-minlength="{{formLabel.column.detail[1].minLength}}" ng-maxlength="{{formLabel.column.detail[1].maxLength}}" ng-readonly="formLabel.column.detail[1].readonly == '1'" typeahead="n.mitmId as n.mitmCode for n in data | filter:$viewValue:stateComparator | limitTo: 10 | orderBy: n.mitmCode" typeahead-editable="false" typeahead-input-formatter="formatLabel($model)" typeahead-on-select="onSelect($item, $model, $label)" autocomplete="off" ng-focus="formItem = true" ng-blur="formItem = false"></div>
+                                        </div>
+
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formDetail2.$invalid && form.gridEditor.formDetail2.$dirty, 'hidden': formLabel.column.detail[2].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column.detail[2].id}}">{{formLabel.column.detail[2].name}} <sup class="required" ng-if="formLabel.column.detail[2].mandatory == '1'">*</sup></label></div>
+                                            <div class="input-content"><input type="text" name="formDetail2" id="input{{formLabel.column.detail[2].id}}" class="form-control" placeholder="{{formLabel.column.detail[2].name}}" ng-model="form.detail[formLabel.column.detail[2].id]" ng-required="formLabel.column.detail[2].mandatory == '1' && formItem" ng-minlength="{{formLabel.column.detail[2].minLength}}" ng-maxlength="{{formLabel.column.detail[2].maxLength}}" ng-readonly="formLabel.column.detail[2].readonly == '1'" ng-focus="formItem = true" ng-blur="formItem = false"></div>
+                                        </div>
+
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formDetail3.$invalid && form.gridEditor.formDetail3.$dirty, 'hidden': formLabel.column.detail[3].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column.detail[3].id}}">{{formLabel.column.detail[3].name}} <sup class="required" ng-if="formLabel.column.detail[3].mandatory == '1'">*</sup></label></div>
+                                            <div class="input-content"><input type="number" name="formDetail3" id="input{{formLabel.column.detail[3].id}}" class="form-control" placeholder="{{formLabel.column.detail[3].name}}" ng-model="form.detail[formLabel.column.detail[3].id]" ng-required="formLabel.column.detail[3].mandatory == '1' && formItem" ng-minlength="{{formLabel.column.detail[3].minLength}}" ng-maxlength="{{formLabel.column.detail[3].maxLength}}" ng-readonly="formLabel.column.detail[3].readonly == '1'" min="{{formLabel.column.detail[3].minVal}}" max="{{formLabel.column.detail[3].maxVal}}" ng-focus="formItem = true" ng-blur="formItem = false"></div>
+                                        </div>
+                                        
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formDetail4.$invalid && form.gridEditor.formDetail4.$dirty, 'hidden': formLabel.column.detail[4].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column.detail[4].id}}">{{formLabel.column.detail[4].name}} <sup class="required" ng-if="formLabel.column.detail[4].mandatory == '1'">*</sup></label></div>
+                                            <div class="input-content"><input type="number" name="formDetail4" id="input{{formLabel.column.detail[4].id}}" class="form-control" placeholder="{{formLabel.column.detail[4].name}}" ng-model="form.detail[formLabel.column.detail[4].id]" ng-required="formLabel.column.detail[4].mandatory == '1' && formItem" ng-minlength="{{formLabel.column.detail[4].minLength}}" ng-maxlength="{{formLabel.column.detail[4].maxLength}}" ng-readonly="formLabel.column.detail[4].readonly == '1'" min="{{formLabel.column.detail[4].minVal}}" max="{{formLabel.column.detail[4].maxVal}}" ng-focus="formItem = true" ng-blur="formItem = false"></div>
+                                        </div>
+
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formDetail5.$invalid && form.gridEditor.formDetail5.$dirty, 'hidden': formLabel.column.detail[5].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column.detail[5].id}}">{{formLabel.column.detail[5].name}} <sup class="required" ng-if="formLabel.column.detail[5].mandatory == '1'">*</sup></label></div>
+                                            <div class="input-content"><input type="text" name="formDetail5" id="input{{formLabel.column.detail[5].id}}" class="form-control" placeholder="{{formLabel.column.detail[5].name}}" ng-model="form.detail[formLabel.column.detail[5].id]" ng-required="formLabel.column.detail[5].mandatory == '1' && formItem" ng-minlength="{{formLabel.column.detail[5].minLength}}" ng-maxlength="{{formLabel.column.detail[5].maxLength}}" ng-readonly="formLabel.column.detail[5].readonly == '1'" ng-focus="formItem = true" ng-blur="formItem = false"></div>
+                                        </div>
+
+                                        <div class="form-group" ng-class="{'has-error': form.gridEditor.formData6.$invalid && form.gridEditor.formData6.$dirty, 'hidden': formLabel.column[6].show != '1'}">
+                                            <div class="label-content"><label for="input{{formLabel.column[6].id}}">{{formLabel.column[6].name}} <sup class="required" ng-if="formLabel.column[6].mandatory == '1'">*</sup></label></div>
+                                            <div class="input-content"><input type="text" name="formData6" id="input{{formLabel.column[6].id}}" class="form-control" placeholder="{{formLabel.column[6].name}}" ng-model="form.data[formLabel.column[6].id]" ng-required="formLabel.column[6].mandatory == '1'" ng-disabled="formLabel.column[6].readonly == '1' || form.data.rihVoid == '1' || form.data.rihStatus == '1' || form.data.rihStatus == '2'"></div>
+                                        </div>
+                                        
+                                        <div class="form-group" ng-click="form.detail[formLabel.column[0].id] = form.data[formLabel.column[0].id]; formItem = false">
+
+                                            <div ng-if="!form.detail[formLabel.column.detail[0].id]">
+                                                <button type="button" class="pull-right" ng-hide="form.gridEditor.$invalid" class="btn btn-default" ng-if="form.data.detail" ng-click="onnew();">
+                                                    Submit
+                                                </button>
+
+                                                <button type="button" class="pull-right" ng-hide="form.gridEditor.$invalid" class="btn btn-default" ng-if="!form.data.detail" ng-init="form.data.detail = {}" ng-click="onnew();">
+                                                    Submit
+                                                </button>
+                                            </div>
+
+                                            <div ng-if="form.detail[formLabel.column.detail[0].id]">
+
+                                                <button type="button" class="pull-right" ng-hide="form.gridEditor.$invalid" class="btn btn-default" ng-if="form.data.detail" ng-click="onupd('{{form.data[formLabel.column[0].id]}}');">
+                                                    Submit
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="clearfix"></div>
+
+                                    </div>
+                                </ng-form>
+
+                            </div>
+                                
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-8 col-sm-6 col-sm-offset-6 col-xs-10">
+                                    <div class="form-groups" ng-class="{'has-error': form.gridEditor.formDetail6.$invalid && form.gridEditor.formDetail6.$dirty, 'hidden': formLabel.column.detail[6].show != '1'}">
+                                        <label for="input{{formLabel.column.detail[6].id}}">{{formLabel.column.detail[6].name}} <sup class="required" ng-if="formLabel.column.detail[6].mandatory == '1'">*</sup></label>
+                                        <span class="pull-right">{{form.data[formLabel.column.detail[6].id] | currency:"":2}}</span>
+                                    </div>
+                                    
+                                    <div class="form-groups" ng-class="{'has-error': form.gridEditor.formDetail7.$invalid && form.gridEditor.formDetail7.$dirty, 'hidden': formLabel.column.detail[7].show != '1'}">
+                                        <label for="input{{formLabel.column.detail[7].id}}">{{formLabel.column.detail[7].name}} <sup class="required" ng-if="formLabel.column.detail[7].mandatory == '1'">*</sup></label>
+                                        <span class="pull-right">{{form.data[formLabel.column.detail[7].id] | currency:"":2}}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </tab>
+    </tabset>
+                
+    <div class="button-container">
+        <button type="submit" class="btn btn-primary" ng-disabled="form.gridEditor.$invalid || form.data.rihdVoid == '1' || form.data.rihdStatus == '1' || form.data.rihdStatus == '2'" ng-if="!form.data[formLabel.column[0].id] && gridData.permission.new == 1">Save</button>
+        <button type="submit" class="btn btn-primary" ng-disabled="form.gridEditor.$invalid || form.data.rihdVoid == '1' || form.data.rihdStatus == '1' || form.data.rihdStatus == '2'" ng-if="form.data[formLabel.column[0].id] && gridData.permission.edit == 1">Save</button>
+        <button type="button" class="btn btn-success" ng-disabled="form.gridEditor.$invalid || form.data.rihdVoid == '1' || form.data.rihdStatus == '1' || form.data.rihdStatus == '2'" ng-if="form.data[formLabel.column[0].id] && gridData.permission.confirm == 1" ng-controller="modalCtrl" ng-click="open('', 'receive_confirm', 'ModalConfirmCtrl')">Confirm</button>
+        <button type="button" class="btn btn-default" ng-disabled="form.gridEditor.$invalid || form.data.rihdVoid == '1' || form.data.rihdStatus == '1' || form.data.rihdStatus == '2'" ng-if="form.data[formLabel.column[0].id] && gridData.permission.void == 1" ng-controller="modalCtrl" ng-click="open('', 'receive_void', 'ModalVoidCtrl')">Void</button>
+
+        <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-if="form.data[formLabel.column[0].id]" ng-click="reset()">Cancel</button>                
+        <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-if="!form.data[formLabel.column[0].id]" ng-click="reset()">Clear</button>
+    </div>
+
+    <div class="clearfix"></div>
+</form>

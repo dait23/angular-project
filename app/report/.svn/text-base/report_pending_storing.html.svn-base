@@ -1,0 +1,69 @@
+
+    <div class="main" resize ng-class="{'main-collapsed': isCollapsed, 'collaps': collapsed, 'opacity': loader}">
+        <div class="wrappers padding">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h1>{{formLabel.title}}</h1>
+                </div>
+
+            </div>
+            
+            <hr style="margin: 5px 0 20px;">
+            
+            <div class="module row">
+                <div class="col-xs-12">
+                    <form name="form.gridEditor" action="{{'/api/admin/' + url}}" method="post" target="_blank" novalidate>
+                        <div class="tab-pane">
+                            <div class="panel">
+                                <div class="col-xss-12">
+                                   
+                                    <input type="hidden" name="type" value="excel" ng-if="preview">
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="input{{formLabel.column[0].id}}">{{formLabel.column[0].name}}</label>
+                                                <input type="text" id="input{{formLabel.column[0].id}}" class="form-control" placeholder="{{formLabel.column[0].name}}" name="{{formLabel.column[0].id}}" ng-model="form.data[formLabel.column[0].id]" datepicker-popup="dd/MM/yyyy" is-open="dateStartOpen" ng-click="dateStartOpen = true" show-button-bar="false" max-date="form.data[formLabel.column[1].id]">
+
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="col-xs-6">
+
+                                            <div class="form-group">
+                                                <label for="input{{formLabel.column[1].id}}">{{formLabel.column[1].name}}</label>
+                                                <input type="text" id="input{{formLabel.column[1].id}}" class="form-control" placeholder="{{formLabel.column[1].name}}" name="{{formLabel.column[1].id}}" ng-model="form.data[formLabel.column[1].id]" datepicker-popup="dd/MM/yyyy" is-open="dateEndOpen" ng-click="dateEndOpen = true" show-button-bar="false" min-date="form.data[formLabel.column[0].id]" max-date="date">
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="button-container">
+                            <button type="submit" class="btn btn-primary">View</button>
+                            <button type="submit" class="btn btn-success" ng-click="preview = true">Export</button>
+               
+<!--                            <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-click="reset()">Clear</button>-->
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+
+        <news></news>
+
+        <footer></footer>
+
+    </div>

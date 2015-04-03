@@ -1,0 +1,300 @@
+<form name="form.gridEditor" ng-submit="submit(form.data[formLabel.column[0].id])" novalidate ng-controller="masterRoleCtrl">
+    <tabset>
+        <tab active="tab.active" disabled="tab.disabled">
+<!--
+            <tab-heading>
+                {{formLabel.title}}
+            </tab-heading>
+-->
+
+            <div class="panel clean">
+                <div>
+                    <input type="hidden" name="{{formLabel.column[0].id}}" ng-model="form.data[formLabel.column[0].id]">
+
+                    <div class="row rows">
+
+                        <div class="medium-6">
+                            <div class="well">
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData1.$invalid && form.gridEditor.formData1.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[1].id}}">{{formLabel.column[1].name}} <sup class="required" ng-if="formLabel.column[1].mandatory">*</sup></label></div>
+                                    <div class="input-content"><input type="text" name="formData1" id="input{{formLabel.column[1].id}}" class="form-control" placeholder="{{formLabel.column[1].name}}" ng-model="form.data[formLabel.column[1].id]" ng-required="formLabel.column[1].mandatory" ng-minlength="{{formLabel.column[1].minLength}}" ng-maxlength="{{formLabel.column[1].maxLength}}" ng-readonly="formLabel.column[1].readonly == '1'"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="medium-6">
+                            
+                            <div class="well">
+                                <div class="form-group" ng-class="{'has-error': form.gridEditor.formData23.$invalid && form.gridEditor.formData23.$dirty}">
+                                    <div class="label-content"><label for="input{{formLabel.column[23].id}}">{{formLabel.column[23].name}} <sup class="required" ng-if="formLabel.column[23].mandatory">*</sup></label></div>
+                                    <div class="input-content">
+                                        <div class="btn-group block">
+                                            <label class="btn btn-default" name="formData23" ng-model="form.data.roleNonActive" btn-radio="'0'" ng-required="formLabel.column[23].mandatory" ng-readonly="formLabel.column[23].readonly == '1'"><i class="glyphicon glyphicon-ok"></i></label>
+                                            <label class="btn btn-default btn-no" name="formData23" ng-model="form.data.roleNonActive" btn-radio="'1'" ng-required="formLabel.column[23].mandatory" ng-readonly="formLabel.column[23].readonly == '1'"><i class="glyphicon glyphicon-remove"></i></label>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="day-content row rows">
+                        <div class="well">
+                           
+                            <div class="medium-6">
+                                <div class="label-content">
+                                    <button type="button" class="btn text-left" ng-readonly="formLabel.column[2].readonly == '1'" ng-model="form.data[formLabel.column[2].id]" ng-class="{'btn-success': form.data[formLabel.column[2].id] == '1', 'btn-default': form.data[formLabel.column[2].id] != '1'}" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'"><i class="glyphicon" ng-class="{'glyphicon-remove': !form.data[formLabel.column[2].id] || form.data[formLabel.column[2].id] == '0', 'glyphicon-ok': form.data[formLabel.column[2].id] == '1' }"></i></button>
+                                    <label for="input{{formLabel.column[2].id}}">{{formLabel.column[2].name}}</label>
+                                </div>
+                                
+                                <div class="input-content" ng-show="form.data[formLabel.column[2].id]">
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[3].id}}" ng-model="form.data[formLabel.column[3].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[4].id}}" ng-model="form.data[formLabel.column[4].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                </div>
+                            </div>
+                            
+                            <div class="medium-6">
+                                <div class="label-content">
+                                    <button type="button" class="btn text-left" ng-readonly="formLabel.column[5].readonly == '1'" ng-model="form.data[formLabel.column[5].id]" ng-class="{'btn-success': form.data[formLabel.column[5].id] == '1', 'btn-default': form.data[formLabel.column[5].id] != '1'}" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'"><i class="glyphicon" ng-class="{'glyphicon-remove': !form.data[formLabel.column[5].id] || form.data[formLabel.column[5].id] == '0', 'glyphicon-ok': form.data[formLabel.column[5].id] == '1' }"></i></button>
+                                    <label for="input{{formLabel.column[5].id}}">{{formLabel.column[5].name}}</label>
+                                </div>
+                                
+                                <div class="input-content" ng-show="form.data[formLabel.column[5].id]">
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[6].id}}" ng-model="form.data[formLabel.column[6].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[7].id}}" ng-model="form.data[formLabel.column[7].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                </div>
+                            </div>
+                               
+                            <div class="medium-6">
+                                <div class="label-content">
+                                    <button type="button" class="btn text-left" ng-readonly="formLabel.column[8].readonly == '1'" ng-model="form.data[formLabel.column[8].id]" ng-class="{'btn-success': form.data[formLabel.column[8].id] == '1', 'btn-default': form.data[formLabel.column[8].id] != '1'}" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'"><i class="glyphicon" ng-class="{'glyphicon-remove': !form.data[formLabel.column[8].id] || form.data[formLabel.column[8].id] == '0', 'glyphicon-ok': form.data[formLabel.column[8].id] == '1' }"></i></button>
+                                    <label for="input{{formLabel.column[8].id}}">{{formLabel.column[8].name}}</label>
+                                </div>
+                                
+                                <div class="input-content" ng-show="form.data[formLabel.column[8].id]">
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[9].id}}" ng-model="form.data[formLabel.column[9].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[10].id}}" ng-model="form.data[formLabel.column[10].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                </div>
+                            </div>
+                            
+                            <div class="medium-6">
+                                <div class="label-content">
+                                    <button type="button" class="btn text-left" ng-readonly="formLabel.column[11].readonly == '1'" ng-model="form.data[formLabel.column[11].id]" ng-class="{'btn-success': form.data[formLabel.column[11].id] == '1', 'btn-default': form.data[formLabel.column[11].id] != '1'}" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'"><i class="glyphicon" ng-class="{'glyphicon-remove': !form.data[formLabel.column[11].id] || form.data[formLabel.column[11].id] == '0', 'glyphicon-ok': form.data[formLabel.column[11].id] == '1' }"></i></button>
+                                    <label for="input{{formLabel.column[11].id}}">{{formLabel.column[11].name}}</label>
+                                </div>
+                                
+                                <div class="input-content" ng-show="form.data[formLabel.column[11].id]">
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[12].id}}" ng-model="form.data[formLabel.column[12].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[13].id}}" ng-model="form.data[formLabel.column[13].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                </div>
+                            </div>
+                               
+                            <div class="medium-6">
+                                <div class="label-content">
+                                    <button type="button" class="btn text-left" ng-readonly="formLabel.column[14].readonly == '1'" ng-model="form.data[formLabel.column[14].id]" ng-class="{'btn-success': form.data[formLabel.column[14].id] == '1', 'btn-default': form.data[formLabel.column[14].id] != '1'}" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'"><i class="glyphicon" ng-class="{'glyphicon-remove': !form.data[formLabel.column[14].id] || form.data[formLabel.column[14].id] == '0', 'glyphicon-ok': form.data[formLabel.column[14].id] == '1' }"></i></button>
+                                    <label for="input{{formLabel.column[14].id}}">{{formLabel.column[14].name}}</label>
+                                </div>
+                                
+                                <div class="input-content" ng-show="form.data[formLabel.column[14].id]">
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[15].id}}" ng-model="form.data[formLabel.column[15].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[16].id}}" ng-model="form.data[formLabel.column[16].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                </div>
+                            </div>
+                            
+                            <div class="medium-6">
+                                <div class="label-content">
+                                    <button type="button" class="btn text-left" ng-readonly="formLabel.column[17].readonly == '1'" ng-model="form.data[formLabel.column[17].id]" ng-class="{'btn-success': form.data[formLabel.column[17].id] == '1', 'btn-default': form.data[formLabel.column[17].id] != '1'}" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'"><i class="glyphicon" ng-class="{'glyphicon-remove': !form.data[formLabel.column[17].id] || form.data[formLabel.column[17].id] == '0', 'glyphicon-ok': form.data[formLabel.column[17].id] == '1' }"></i></button>
+                                    <label for="input{{formLabel.column[17].id}}">{{formLabel.column[17].name}}</label>
+                                </div>
+                                
+                                <div class="input-content" ng-show="form.data[formLabel.column[17].id]">
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[18].id}}" ng-model="form.data[formLabel.column[18].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[19].id}}" ng-model="form.data[formLabel.column[19].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                </div>
+                            </div>
+                            
+                            <div class="medium-6">
+                                <div class="label-content">
+                                    <button type="button" class="btn text-left" ng-readonly="formLabel.column[20].readonly == '1'" ng-model="form.data[formLabel.column[20].id]" ng-class="{'btn-success': form.data[formLabel.column[20].id] == '1', 'btn-default': form.data[formLabel.column[20].id] != '1'}" btn-checkbox btn-checkbox-true="'1'" btn-checkbox-false="'0'"><i class="glyphicon" ng-class="{'glyphicon-remove': !form.data[formLabel.column[20].id] || form.data[formLabel.column[20].id] == '0', 'glyphicon-ok': form.data[formLabel.column[20].id] == '1' }"></i></button>
+                                    <label for="input{{formLabel.column[20].id}}">{{formLabel.column[20].name}}</label>
+                                </div>
+                                
+                                <div class="input-content" ng-show="form.data[formLabel.column[20].id]">
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[21].id}}" ng-model="form.data[formLabel.column[21].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                    <div class="medium-6"><timepicker id="input{{formLabel.column[22].id}}" ng-model="form.data[formLabel.column[22].id]" show-meridian="false" class="timepicker"></timepicker></div>
+                                </div>
+                            </div>
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+          
+                    <div class="datatable" ng-show="!loader">
+
+                        <div class="table table-striped table-border table-hover pull-left">
+                            <div class="tr">
+                                <div class="th" ng-repeat="column in formLabel.column.detail" ng-show="column.show">
+                                    <div class="{{column.id}}" style="width:{{column.width}}px">
+
+                                        <div class="labelwrapper">
+
+                                            {{column.name}}
+                                        </div>
+
+                                        <div class="resize" style="z-index: 90;" resizer="vertical" resizer-x="{{column.id}}"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script type="text/ng-template" id="menus">
+                                <div class="tr" ng-class="{deleting:row.deleting, selected:row.selected}" ng-class-odd="'odd'" ng-class-even="'even'" class="status-{{row.status}} rowWrapper">
+                                    
+                                    <div class="td" ng-repeat="n in formLabel.column.detail" ng-show="formLabel.column.detail[$index].show">
+                                        <div class="{{column.id}}" style="width:{{formLabel.column.detail[$index].width}}px">
+                                            <div ng-if="row[formLabel.column[$index].id] != ''" class="twrapper {{formLabel.column.detail[$index].id}}" ng-class="{'twrapper-null': $index != 0}">
+
+                                                <span ng-if="row.data">
+                                                    <i class="glyphicon" ng-class="{'glyphicon-plus': !row.toggle, 'glyphicon-minus': row.toggle}" ng-if="$index == 0" ng-click="row.toggle =! row.toggle"></i>
+                                                </span>
+
+                                                <span ng-if="formLabel.column.detail[$index].type == 'varchar'" class="tWrap">
+                                                    {{row[formLabel.column.detail[$index].id]}}
+                                                </span>
+
+                                                <span ng-if="formLabel.column.detail[$index].type == 'integer'" ng-init="form.detail[row.menuId] = {};">
+                                                    <span ng-if="form.data.detail[row.menuId]" ng-init="form.detail[row.menuId] = form.data.detail[row.menuId]"></span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmView'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[row.menuId]['rolmView']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmNew'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[row.menuId]['rolmNew']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmEdit'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[row.menuId]['rolmEdit']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmDelete'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[row.menuId]['rolmDelete']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmConfirm'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[row.menuId]['rolmConfirm']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmVoid'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[row.menuId]['rolmVoid']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmApprove'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[row.menuId]['rolmApprove']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <span ng-if="row.data" ng-init="row.toggle = false; form.detail.load = true;" class="parent">
+                                    <span ng-if="row.toggle">
+                                        <span ng-repeat="row in row.data" ng-include="'menus_parent'"></span>
+                                    </span>
+                                </span>
+                            </script>
+                            
+                            <script type="text/ng-template" id="menus_parent">
+                                <div class="tr" ng-class="{deleting:$parent.row.deleting, selected:$parent.row.selected}" ng-class-odd="'odd'" ng-class-even="'even'" class="status-{{$parent.row.status}} rowWrapper">
+                                    
+                                    <div class="td" ng-repeat="n in formLabel.column.detail" ng-show="formLabel.column.detail[$index].show">
+                                        <div class="{{column.id}}" style="width:{{formLabel.column.detail[$index].width}}px">
+                                            <div ng-if="$parent.row[formLabel.column[$index].id] != ''" class="twrapper {{formLabel.column.detail[$index].id}}" ng-class="{'twrapper-null': $index != 0}">
+
+                                                <span ng-if="$parent.row.data">
+                                                    <i class="glyphicon" ng-class="{'glyphicon-plus': !$parent.row.toggle, 'glyphicon-minus': $parent.row.toggle}" ng-if="$index == 0" ng-click="$parent.row.toggle =! $parent.row.toggle"></i>
+                                                </span>
+
+                                                <span ng-if="formLabel.column.detail[$index].type == 'varchar'" class="tWrap">
+                                                    {{$parent.row[formLabel.column.detail[$index].id]}}
+                                                </span>
+
+                                                <span ng-if="formLabel.column.detail[$index].type == 'integer'" ng-init="form.detail[$parent.row.menuId] = form.detail[$parent.row.menuId] || {};">
+                                                    <span ng-if="form.data.detail[$parent.row.menuId]" ng-init="form.detail[$parent.row.menuId] = form.data.detail[$parent.row.menuId]"></span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmView'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[$parent.row.menuId]['rolmView']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmNew'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[$parent.row.menuId]['rolmNew']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmEdit'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[$parent.row.menuId]['rolmEdit']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmDelete'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[$parent.row.menuId]['rolmDelete']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmConfirm'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[$parent.row.menuId]['rolmConfirm']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmVoid'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[$parent.row.menuId]['rolmVoid']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    <span ng-if="formLabel.column.detail[$index].id == 'rolmApprove'" class="tWrap block" style="text-align:center">
+                                                        <input type="checkbox" ng-model="form.detail[$parent.row.menuId]['rolmApprove']" ng-true-value="1" ng-false-value="0">
+                                                    </span>
+                                                    
+                                                    
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <span ng-if="$parent.row.data" ng-init="$parent.row.toggle = false; form.detail.load = true;" class="parent">
+                                    <span ng-if="$parent.row.toggle">
+                                        <span ng-repeat="row in $parent.row.data" ng-include="'menus_parent'"></span>
+                                    </span>
+                                </span>
+                            </script>
+
+                            <span ng-if="menuData.data">
+                                <span class="block" ng-repeat="row in menuData.data" ng-include="'menus'"></span>
+                            </span>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </tab>
+    </tabset>
+                
+    <div class="button-container">
+        <button type="submit" class="btn btn-primary" ng-disabled="form.gridEditor.$invalid" ng-if="!form.data[formLabel.column[0].id] && gridData.permission.new == 1">Save</button>
+        <button type="submit" class="btn btn-primary" ng-disabled="form.gridEditor.$invalid" ng-if="form.data[formLabel.column[0].id] && gridData.permission.edit == 1">Update</button>
+        <button type="button" class="btn btn-warning" ng-if="form.data[formLabel.column[0].id] && gridData.permission.delete == 1" ng-really-click="delete(form.data[formLabel.column[0].id])">Delete</button>
+
+        <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-if="form.data[formLabel.column[0].id]" ng-click="reset()">Cancel</button>                
+        <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-if="!form.data[formLabel.column[0].id]" ng-click="reset()">Clear</button>
+    </div>
+
+    <div class="clearfix"></div>
+</form>

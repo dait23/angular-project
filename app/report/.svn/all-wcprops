@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/exoduzInventory/!svn/ver/2479/public/admin/app/report
+END
+report_storing_by_receive.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_storing_by_receive.html
+END
+report_purchase_order_by_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_purchase_order_by_supplier.html
+END
+report_pending_storing.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_pending_storing.html
+END
+report_invoice_summary_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_invoice_summary_supplier.html
+END
+report_storing_by_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_storing_by_item.html
+END
+report_receive_by_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_receive_by_supplier.html
+END
+report_purchase_order_by_supplier_summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_purchase_order_by_supplier_summary.html
+END
+report_stock_by_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2479/public/admin/app/report/report_stock_by_supplier.html
+END
+controller.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/exoduzInventory/!svn/ver/356/public/admin/app/report/controller.js
+END
+report_receive_by_new_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_receive_by_new_item.html
+END
+report_receive_by_over_qty.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_receive_by_over_qty.html
+END
+report_purchase_order_by_supplier_detail.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_purchase_order_by_supplier_detail.html
+END
+report_purchase_order.html
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_purchase_order.html
+END
+report_receive_by_pending_per_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_receive_by_pending_per_supplier.html
+END
+report_invoice_by_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_invoice_by_supplier.html
+END
+report_stock_by_category.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_stock_by_category.html
+END
+report_stock_all.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_stock_all.html
+END
+report_purchase_order_by_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2377/public/admin/app/report/report_purchase_order_by_item.html
+END

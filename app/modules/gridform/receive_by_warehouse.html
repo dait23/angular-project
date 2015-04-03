@@ -1,0 +1,52 @@
+<div class="datatable">
+    <form name="filterEditor" class="well fixed tab-panel" ng-submit="filters()">
+        <div class="form-group" ng-class="{'has-error': form.filterEditor.formFilter0.$invalid && form.filterEditor.formFilter0.$dirty, 'hidden': gridHeader.column.detail[0].show != '1'}">
+            <label for="input{{gridHeader.column.detail[0].id}}" class="col-xs-3 col-sm-2" style="margin-top: 4px">{{gridHeader.column.detail[0].name}} <sup class="required" ng-if="gridHeader.column.detail[0].mandatory == '1'">*</sup></label>
+            <div class="btn-group col-xs-9 col-sm-10" ng-init="form.filter.rihdStatus = '0'">
+                <label class="btn btn-default col-xs-4" name="formFilter0" ng-model="form.filter.rihdStatus" btn-radio="'0'" ng-required="gridHeader.column.detail[0].mandatory" ng-readonly="gridHeader.column.detail[0].readonly == '1'">{{gridHeader.column.detail[0].selector[0]}}</label>
+                <label class="btn btn-default col-xs-4" name="formFilter0" ng-model="form.filter.rihdStatus" btn-radio="'1'" ng-required="gridHeader.column.detail[0].mandatory" ng-readonly="gridHeader.column.detail[0].readonly == '1'">{{gridHeader.column.detail[0].selector[1]}}</label>
+                <label class="btn btn-default col-xs-4" name="formFilter0" ng-model="form.filter.rihdStatus" btn-radio="'all'" ng-required="gridHeader.column.detail[0].mandatory" ng-readonly="gridHeader.column.detail[0].readonly == '1'">{{gridHeader.column.detail[0].selector['all']}}</label>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="form-group" ng-class="{'has-error': form.gridEditor.formData4.$invalid && form.gridEditor.formData4.$dirty, 'hidden': gridHeader.column.detail[1].show != '1'}">
+            <label for="input{{gridHeader.column.detail[1].id}}" class="col-xs-3 col-sm-2" style="margin-top: 4px">{{gridHeader.column.detail[1].name}} <sup class="required" ng-if="gridHeader.column.detail[1].mandatory == '1'">*</sup></label>
+            <div class="col-xs-7 col-sm-8">
+                <input type="text" name="formData4" id="input{{gridHeader.column.detail[1].id}}" class="form-control" placeholder="{{gridHeader.column.detail[1].name}}" ng-model="form.filter[gridHeader.column.detail[1].id]" ng-required="gridHeader.column.detail[1].mandatory == '1'" ng-disabled="gridHeader.column.detail[1].readonly == '1' || form.data.sthVoid == '1' || form.data.sthStatus == '1' || form.data.sthStatus == '2'">
+            </div>
+            <div class="pull-left">
+                <button type="submit" class="btn btn-primary" ng-disabled="form.filter.rihdStatus != '0' && !form.filter[gridHeader.column.detail[1].id]">Search</button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </form>
+
+    <div class="griddata_container">
+        <div ng-repeat="row in gridData.data track by $index" class="rowz">
+            <div class="cols-xs-12 griddata" ng-click="loadDetail(row[gridHeader.column[0].id])">
+                <div class="col-xs-4">
+                    <div><label style="width: {{gridHeader.column[1].width}}px">{{gridHeader.column[1].name}}</label> : <span>{{row[gridHeader.column[1].id]}}</span></div>
+                    <div class="clearfix"></div>
+                    <div><label style="width: {{gridHeader.column[2].width}}px">{{gridHeader.column[2].name}}</label> : <span>{{row[gridHeader.column[2].id]}}</span></div>
+                </div>
+
+                <div class="col-xs-4">
+                    <div><label style="width: {{gridHeader.column[3].width}}px">{{gridHeader.column[3].name}}</label> : <span>{{row[gridHeader.column[3].id]}}</span></div>
+                    <div class="clearfix"></div>
+                    <div><label style="width: {{gridHeader.column[4].width}}px">{{gridHeader.column[4].name}}</label> : <span>{{row[gridHeader.column[4].id]}}</span></div>
+                </div>
+
+                <div class="col-xs-4">
+                    <div><label style="width: {{gridHeader.column[5].width}}px">{{gridHeader.column[5].name}}</label> : <span>{{row[gridHeader.column[5].id]}}</span></div>
+                    <div class="clearfix"></div>
+                    <div><label style="width: {{gridHeader.column[6].width}}px">{{gridHeader.column[6].name}}</label> : <span>{{row[gridHeader.column[6].id]}}</span></div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div style="margin-bottom:57px"></div>    

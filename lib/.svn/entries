@@ -1,0 +1,67 @@
+10
+
+dir
+2819
+http://192.168.11.123/repos/exoduzInventory/public/admin/lib
+http://192.168.11.123/repos/exoduzInventory
+
+
+
+2015-02-04T02:53:11.878166Z
+333
+ardian
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2f30c78f-c2c4-4b62-8c7a-9c286441024e
+
+angular-ui-bootstrap
+dir
+
+angular-ui-router
+dir
+
+angular-ui-utils
+dir
+
+fastclick
+dir
+
+angular-route
+dir
+
+es-shim
+dir
+
+angular-select
+dir
+
+angular
+dir
+
+angular-touch
+dir
+
+json3
+dir
+
+angular-sanitize
+dir
+
+angular-seo
+dir
+
+angular-resource
+dir
+

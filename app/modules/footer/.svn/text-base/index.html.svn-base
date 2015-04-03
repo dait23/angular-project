@@ -1,0 +1,9 @@
+<div class="contents">
+    <span class="pull-right">
+        <a id="En" ng-click="lang('en')">English</a>
+        <span>&bull;</span>
+        <a id="Id" ng-click="lang('id')">Indonesia</a>
+    </span>
+    <span class="pull-left">Agape Software Internasional</span>
+    <div class="clearfix"></div>
+</div>

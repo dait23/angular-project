@@ -1,0 +1,151 @@
+<div class="datatable">
+
+    <div class="table table-striped table-border table-hover pull-left">
+        <div class="tr">
+            <div class="th" ng-if="gridData.permission.edit == 1 && gridData.permission.view == 1">
+                <div style="width: 48px"></div>
+            </div>
+            <div class="th" ng-repeat="column in gridHeader.column track by $index" ng-show="column.show">
+                <div class="resize{{$index}}" style="width:{{column.width}}px">
+                    <div class="actionbox">
+                        <div class="actioncontainer" title="Search" body="toggled = false">
+                            <div class="badge" ng-click="toggled =! toggled"><i class="caret"></i></div>
+                            <ul class="actionlist dropdown-menu" ng-show="toggled">
+                                <li><input class="form-control input" type="text" name="searchText" ng-model="column.filter" ng-enter="setFilter(); toggled = false" placeholder="Filter"></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="labelwrapper" ng-click="sort()">
+                        <span ng-class="{'caret':column.sort == 1, 'caret-up':column.sort == 2}"></span>
+
+                        {{column.name}}
+                    </div>
+
+                    <div class="resize" style="z-index: 90;" resizer="vertical" resizer-x="resize{{$index}}"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/ng-template" id="row">
+            <div class="tr" ng-class="{deleting:row.deleting, selected:row.selected}" ng-class-odd="'odd'" ng-class-even="'even'" class="status-{{row.status}} rowWrapper" ng-dblclick="loadDetail(row[gridHeader.column[0].id])">
+                <div class="td gridAction" ng-if="gridData.permission.edit == 1 && gridData.permission.view == 1">
+                    <div style="width: 48px">
+                        <ul style="font-size: 18px;">
+                            <li class="edit btn pull-left label label-default" title="Edit" ng-show="row[gridHeader.column[0].id]" ng-click="loadDetail(row[gridHeader.column[0].id])"><i class="glyphicon glyphicon-pencil"></i></li> 
+                        </ul>
+                   </div>
+                </div>
+                <div class="td" ng-repeat="(key, value) in row track by $index" ng-show="gridHeader.column[$index].show">
+                    <div class="{{column.id}}" style="width:{{gridHeader.column[$index].width}}px">
+                        <div ng-if="row[gridHeader.column[$index].id] != ''" class="twrapper {{gridHeader.column[$index].id}}">
+
+                            <span ng-if="row.data">
+                                <i class="glyphicon" ng-class="{'glyphicon-plus': !row.toggle, 'glyphicon-minus': row.toggle}" ng-if="$index == 1" ng-click="row.toggle =! row.toggle"></i>
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == ''" class="tWrap"> 
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'varchar'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'date'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'datetime'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'decimal'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'integer'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'int'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'float'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'smallint'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'bigint'" class="tWrap">
+                                {{row[gridHeader.column[$index].id]}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'amount'" class="tWrap text-right block">
+                                {{row[gridHeader.column[$index].id] | amount:""}}
+                            </span>
+
+                            <span ng-if="gridHeader.column[$index].type == 'image'" class="tWrap">
+                                <img ng-src="{{row[gridHeader.column[$index].id][0]}}">
+                            </span>
+
+                            <div ng-if="gridHeader.column[$index].type == 'status'" class="status">
+                                <span>{{row[gridHeader.column[$index].id]}}</span>
+                            </div>
+
+                            <div ng-if="gridHeader.column[$index].type == 'boolean'" class="boolean">
+                                <span ng-if="row[gridHeader.column[$index].id] == true">True</span>
+                                <span ng-if="row[gridHeader.column[$index].id] == false">False</span>
+                            </div>
+
+                            <div ng-if="gridHeader.column[$index].type == 'file'" class="file">
+                                <span>{{row[gridHeader.column[$index].id]}}</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span ng-if="row.data" ng-show="row.toggle" ng-init="row.toggle = false" class="parent">
+                <span ng-repeat="row in row.data track by $index" ng-include="'row'"></span>
+            </span>
+        </script>
+
+        <span ng-if="gridData.data">
+            <span class="block" ng-repeat="row in gridData.data track by $index" ng-include="'row'"></span>
+        </span>
+        <span ng-if="!gridData.data">
+            <div class="tr block">No data</div>
+        </span>
+    </div>
+</div>
+
+<div class="paginate" ng-if="gridData.data">
+    <span class="itemInfo pull-left hidden-sm hidden-xs">
+        <ul class="pagination">
+            <li ng-if="gridData.pagination.itemPerPage < gridData.pagination.total"><span>Showing {{gridData.data.length}} items of {{gridData.pagination.total}}.</span></li>
+            <li ng-if="gridData.pagination.itemPerPage >= gridData.pagination.total"><span>Showing {{gridData.pagination.total}} items of {{gridData.pagination.total}}.</span></li>
+        </ul>
+    </span>
+    <div class="pull-right">
+        <ul class="pagination">
+            <li ng-repeat="page in gridData.pagingPrev" ng-class="{'disabled':page.active ==false}" class="button" ng-disabled="page.active ==false">
+                <a href="javascript:void(0);" ng-click="page.active == false || changePage(page.page)">{{page.value}}</a>
+            </li>
+            <li>
+                <span class="gotoPage">Page <input class="input" type="number" name="txtPaging" min="1" max="{{gridData.pagination.totalPage}}" value="{{gridData.pagination.page}}" ng-change="gridData.pagination.page == '' || changePage(gridData.pagination.page)" ng-model="gridData.pagination.page"> of {{gridData.pagination.totalPage}}</span>
+            </li>
+            <li ng-repeat="page in gridData.pagingNext" ng-class="{'disabled':page.active ==false}" class="button" ng-disabled="page.active ==false">
+                <a href="javascript:void(0);" ng-click="page.active == false || changePage(page.page)">{{page.value}}</a>
+            </li>
+        </ul>
+        
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>

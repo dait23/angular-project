@@ -1,0 +1,15 @@
+<div>
+    <form name="voidform" ng-submit="void()" novalidate>
+        <div class="modal-body">
+
+            <input type="hidden" name="{{formLabel.column[0].id}}" ng-model="form.data[formLabel.column[0].id]">
+
+            Are you sure want to confirm?
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-success" type="submit" ng-disabled="voidform.$invalid" ng-click="form.data['pichStatus'] = '1'">Yes</button>
+            <button class="btn btn-default" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    
+    </form>
+</div>

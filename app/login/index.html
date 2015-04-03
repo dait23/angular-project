@@ -1,0 +1,103 @@
+<div style="background-image: url(images/background.png);background-repeat: no-repeat; position: fixed; top: 0; bottom: 0; left: 0; right: 0"></div>
+<div class="mains" style="margin-top: 7.5%;">
+
+    <div class="wrapper">
+        <div class="middle" ng-show="login">
+            <div class="login panel panel-primary">
+               
+                <h1>Welcome to</h1>
+                <img src="images/logo-exoduz.png">
+                
+                <div class="panel-heading">
+                    <img src="images/login-icon.png">
+                </div>
+                <div class="panel-body">
+                    <form name="loginform" id="login" ng-submit="submit()" novalidate>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Username" ng-model="username" ng-required="true">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" ng-model="password" ng-required="true">
+                        </div>
+                        <div ng-if="setCaptcha">
+                            <div style="position: relative;">
+                                <img ng-src="{{captchaUrl}}" class="captcha">
+                                <i class="glyphicon glyphicon-refresh refresh" ng-click="captchaRefresh()" style="color:white; position: absolute;top:14px;"></i>
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-eye-open"></i></span>
+                                <input type="text" class="form-control" placeholder="Captcha" ng-model="$parent.captcha" ng-required="true">
+                            </div>
+                        </div>
+                        <img src="images/hr.png" style="margin-top: 25px;">
+                        <button type="submit" class="btn btn-success btn-block" ng-disabled="loginform.$invalid">Login</button>
+                    </form>
+                </div>
+                        
+                <div class="alert alert-danger alert-dismissible" role="alert" ng-if="errorLogin">
+                    {{errorLogin}}
+                </div>
+            </div>
+        </div>
+        
+        <div class="middle" ng-show="changepass">
+            <div class="login panel panel-primary">
+               
+                <h1>Welcome to</h1>
+                <img src="images/logo-exoduz.png">
+                
+                <div class="panel-heading">
+                    <img src="images/password-icon.png">
+                </div>
+                <div class="panel-body">
+                    <form name="passwordform" id="password" ng-submit="submitPassword()" novalidate>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" ng-model="newPassword" ng-required="true">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Confirm" ng-model="newPassword_confirmation" ng-required="true">
+                        </div>
+                        <img src="images/hr.png" style="margin-top: 25px;">
+                        <button type="submit" class="btn btn-success btn-half" ng-disabled="passwordform.$invalid">Continue</button>
+                        <button type="button" class="btn btn-danger btn-half pull-right" ng-click="login = true; changepass = false; company = false">Cancel</button>
+                    </form>
+                </div>
+                        
+                <div class="alert alert-danger alert-dismissible" role="alert" ng-if="errorPassword">
+                    {{errorPassword}}
+                </div>
+            </div>
+        </div>
+        
+        <div class="middle" ng-show="company">
+            <div class="login panel panel-primary">
+               
+                <h1>Welcome to</h1>
+                <img src="images/logo-exoduz.png">
+                
+                <div class="panel-heading">
+                    <img src="images/option-icon.png">
+                </div>
+                <div class="panel-body">
+                    <form name="companyform" id="company" ng-submit="submitCompany()" novalidate>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <input type="text" class="form-control" placeholder="Company" ng-model="compId" ng-required="true" typeahead="n.compId as n.compName for n in data | filter:$viewValue:stateComparator | orderBy: n.compName" typeahead-editable="false" typeahead-input-formatter="formatLabel($model)" autocomplete="off" empty-typeahead ng-focus="onFocus($event)" ng-blur="onBlur()">
+                        </div>
+                        <img src="images/hr.png" style="margin-top: 25px;">
+                        <button type="submit" class="btn btn-success btn-half" ng-disabled="companyform.$invalid">Continue</button>
+                        <button type="button" class="btn btn-danger btn-half pull-right" ng-click="login = true; changepass = false; company = false">Cancel</button>
+                    </form>
+                </div>
+                        
+                <div class="alert alert-danger alert-dismissible" role="alert" ng-if="errorCompany">
+                    {{errorCompany}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

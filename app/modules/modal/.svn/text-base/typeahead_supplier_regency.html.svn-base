@@ -1,0 +1,25 @@
+<div>
+    <div class="modal-body">
+        <input type="text" class="form-control" ng-model="filt" ng-change="currentPage = 1">
+        <table style="width:100%;background:white;" class="table table-bordered table-condensed table-hover">
+            <tr ng-repeat="item in data | filter: filt | startFrom:(currentPage-1)*pageSize | limitTo:pageSize" ng-click="form.data.msupMsreId = item.msreId; cancel()">
+                <td>{{item.msreDescription}}</td>
+            </tr>
+        </table>
+        <ul class="pagination">
+            <li ng-class="{'disabled':page.active ==false}" class="button" ng-disabled="currentPage == 1">
+                <a href="javascript:void(0);" ng-click="currentPage=currentPage-1">&lt;</a>
+            </li>
+            <li>
+                <span class="gotoPage" style="padding-top: 7px">Page {{currentPage}} of {{numberOfPages()}}</span>
+            </li>
+            <li ng-class="{'disabled':page.active ==false}" class="button" ng-disabled="currentPage >= data.length/pageSize">
+                <a href="javascript:void(0);" ng-click="currentPage=currentPage+1">&gt;</a>
+            </li>
+        </ul>
+        
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</div>

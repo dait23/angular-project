@@ -1,0 +1,86 @@
+
+    <div class="main" resize ng-class="{'main-collapsed': isCollapsed, 'collaps': collapsed, 'opacity': loader}">
+        <div class="wrappers padding">
+            <div class="row">
+
+                <div class="col-sm-12">
+                    <h1>{{formLabel.title}}</h1>
+                </div>
+
+            </div>
+            
+            <hr style="margin: 5px 0 20px;">
+            
+            <div class="module row">
+                <div class="col-xs-12">
+                    <form name="form.gridEditor" action="{{'/api/admin/' + url}}" method="post" target="_blank" novalidate>
+                        <div class="tab-pane">
+                            <div class="panel">
+                                <div class="col-xss-12">
+                                   
+                                    <input type="hidden" name="type" value="excel" ng-if="preview">
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="input{{formLabel.column[1].id}}">{{formLabel.column[1].name}}</label>
+                                                <input type="text" id="input{{formLabel.column[1].id}}" class="form-control" placeholder="{{formLabel.column[1].name}}" name="{{formLabel.column[1].id}}" ng-model="form.data[formLabel.column[1].id]" datepicker-popup="dd/MM/yyyy" is-open="dateStartOpen" ng-click="dateStartOpen = true" show-button-bar="false" max-date="form.data[formLabel.column[2].id]">
+
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="col-xs-6">
+
+                                            <div class="form-group">
+                                                <label for="input{{formLabel.column[2].id}}">{{formLabel.column[2].name}}</label>
+                                                <input type="text" id="input{{formLabel.column[2].id}}" class="form-control" placeholder="{{formLabel.column[2].name}}" name="{{formLabel.column[2].id}}" ng-model="form.data[formLabel.column[2].id]" datepicker-popup="dd/MM/yyyy" is-open="dateEndOpen" ng-click="dateEndOpen = true" show-button-bar="false" min-date="form.data[formLabel.column[1].id]" max-date="date">
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="input{{formLabel.column[0].id}}">{{formLabel.column[0].name}}</label>
+                                        <input type="text" class="btn-groups-filter" name="type" ng-model="itemFilter" ng-focus="itemFilter = ''" autocomplete="off" placeholder="Filter...">
+                                        <span ng-click="clearAllItem()" class="btn btn-xs btn-default pull-right" ng-show="checkItem">Clear</span>
+                                        <div class="btn-groups block" ng-init="form.data.mitmId = []">
+                                            <label class="btn btn-default col-xs-12 col-sm-6 col-md-4 text-left" ng-repeat="n in item | filter: itemFilter" ng-class="{'btn-success': form.data.mitmId.indexOf(n.mitmId) > -1}" ng-click="$parent.itemFilter = ''">
+                                                <i class="glyphicon glyphicon-ok-sign" ng-show="form.data.mitmId.indexOf(n.mitmId) > -1"></i>
+                                                <i class="glyphicon glyphicon-minus-sign" ng-show="form.data.mitmId.indexOf(n.mitmId) == -1"></i>
+                                                <input type="checkbox" value="{{n.mitmId}}" ng-checked="form.data.mitmId.indexOf(n.mitmId) > -1" ng-click="toggleItem(n.mitmId)" name="{{formLabel.column[0].id}}[]" id="input{{formLabel.column[0].id}}{{n.mitmId}}" ng-disabled="disableItem && form.data.mitmId.indexOf(n.mitmId) == -1">
+                                                <label for="input{{formLabel.column[0].id}}{{n.mitmId}}">{{n.mitmCodeDescription}}</label>
+                                            </label>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="button-container">
+                            <button type="submit" class="btn btn-primary">View</button>
+                            <button type="submit" class="btn btn-success" ng-click="preview = true">Export</button>
+               
+<!--                            <button type="reset" class="btn btn-danger pull-right" id="reset-button" ng-click="reset()">Clear</button>-->
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+
+        <news></news>
+
+        <footer></footer>
+
+    </div>

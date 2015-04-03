@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/exoduzInventory/!svn/ver/3/public/admin/lib/angular-select/bootstrap
+END
+select.tpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/exoduzInventory/!svn/ver/3/public/admin/lib/angular-select/bootstrap/select.tpl.html
+END
+match-multiple.tpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/3/public/admin/lib/angular-select/bootstrap/match-multiple.tpl.html
+END
+select-multiple.tpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/3/public/admin/lib/angular-select/bootstrap/select-multiple.tpl.html
+END
+match.tpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/3/public/admin/lib/angular-select/bootstrap/match.tpl.html
+END
+choices.tpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/3/public/admin/lib/angular-select/bootstrap/choices.tpl.html
+END

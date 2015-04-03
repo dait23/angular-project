@@ -1,0 +1,659 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/exoduzInventory/!svn/ver/2762/public/admin/app/modules/modal
+END
+typeahead_item_size.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/2308/public/admin/app/modules/modal/typeahead_item_size.html
+END
+typeahead_company_dp.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2499/public/admin/app/modules/modal/typeahead_company_dp.html
+END
+typeahead_customer_journal.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2360/public/admin/app/modules/modal/typeahead_customer_journal.html
+END
+typeahead_po_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2050/public/admin/app/modules/modal/typeahead_po_item.html
+END
+typeahead_damage_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2069/public/admin/app/modules/modal/typeahead_damage_item.html
+END
+typeahead_company_deposit.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/exoduzInventory/!svn/ver/2499/public/admin/app/modules/modal/typeahead_company_deposit.html
+END
+typeahead_item_others_store.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2300/public/admin/app/modules/modal/typeahead_item_others_store.html
+END
+typeahead_ar_payment.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2653/public/admin/app/modules/modal/typeahead_ar_payment.html
+END
+typeahead_so_customer.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2250/public/admin/app/modules/modal/typeahead_so_customer.html
+END
+journal_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/exoduzInventory/!svn/ver/2650/public/admin/app/modules/modal/journal_confirm.html
+END
+typeahead_employee_detail_status.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/exoduzInventory/!svn/ver/2291/public/admin/app/modules/modal/typeahead_employee_detail_status.html
+END
+typeahead_item_subcategory.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2312/public/admin/app/modules/modal/typeahead_item_subcategory.html
+END
+typeahead_employee_detail_division.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/exoduzInventory/!svn/ver/2291/public/admin/app/modules/modal/typeahead_employee_detail_division.html
+END
+account_receivable_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2650/public/admin/app/modules/modal/account_receivable_confirm.html
+END
+purchase_approval_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/purchase_approval_confirm.html
+END
+billing_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/exoduzInventory/!svn/ver/2454/public/admin/app/modules/modal/billing_confirm.html
+END
+typeahead_journal_type.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2557/public/admin/app/modules/modal/typeahead_journal_type.html
+END
+billing_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/2454/public/admin/app/modules/modal/billing_void.html
+END
+typeahead_storing_location.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2258/public/admin/app/modules/modal/typeahead_storing_location.html
+END
+password.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/exoduzInventory/!svn/ver/1534/public/admin/app/modules/modal/password.html
+END
+typeahead_item_others_category.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/exoduzInventory/!svn/ver/2299/public/admin/app/modules/modal/typeahead_item_others_category.html
+END
+typeahead_picking_pic.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2144/public/admin/app/modules/modal/typeahead_picking_pic.html
+END
+typeahead_supplier_regency.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2332/public/admin/app/modules/modal/typeahead_supplier_regency.html
+END
+typeahead_receive_warehouse_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/exoduzInventory/!svn/ver/2202/public/admin/app/modules/modal/typeahead_receive_warehouse_item.html
+END
+typeahead_customer_coa.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2421/public/admin/app/modules/modal/typeahead_customer_coa.html
+END
+sales_order_list_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/sales_order_list_confirm.html
+END
+typeahead_invoice_purchase.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2082/public/admin/app/modules/modal/typeahead_invoice_purchase.html
+END
+typeahead_company_lost_year.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2495/public/admin/app/modules/modal/typeahead_company_lost_year.html
+END
+setting.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/setting.html
+END
+typeahead_so_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2253/public/admin/app/modules/modal/typeahead_so_item.html
+END
+typeahead_po_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2051/public/admin/app/modules/modal/typeahead_po_supplier.html
+END
+typeahead_item_subcategory_category.html
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/exoduzInventory/!svn/ver/2303/public/admin/app/modules/modal/typeahead_item_subcategory_category.html
+END
+sales_order_approval_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/sales_order_approval_void.html
+END
+typeahead_item_brand.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2308/public/admin/app/modules/modal/typeahead_item_brand.html
+END
+packing_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/packing_confirm.html
+END
+typeahead_company_so.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2499/public/admin/app/modules/modal/typeahead_company_so.html
+END
+typeahead_company_stock.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2495/public/admin/app/modules/modal/typeahead_company_stock.html
+END
+packing_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/packing_void.html
+END
+account_receivable_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2650/public/admin/app/modules/modal/account_receivable_void.html
+END
+typeahead_item_others_location.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/exoduzInventory/!svn/ver/2300/public/admin/app/modules/modal/typeahead_item_others_location.html
+END
+receive_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/receive_confirm.html
+END
+typeahead_return_po_po.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2895/public/admin/app/modules/modal/typeahead_return_po_po.html
+END
+return_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/return_void.html
+END
+typeahead_item_others_size.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2299/public/admin/app/modules/modal/typeahead_item_others_size.html
+END
+typeahead_menu_parent.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2375/public/admin/app/modules/modal/typeahead_menu_parent.html
+END
+picking_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/picking_confirm.html
+END
+typeahead_packing_so.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2093/public/admin/app/modules/modal/typeahead_packing_so.html
+END
+typeahead_po_unit.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2058/public/admin/app/modules/modal/typeahead_po_unit.html
+END
+typeahead_damage_unit.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2089/public/admin/app/modules/modal/typeahead_damage_unit.html
+END
+typeahead_so_payment.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2243/public/admin/app/modules/modal/typeahead_so_payment.html
+END
+storing_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/storing_confirm.html
+END
+typeahead_supplier_bank_2.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/exoduzInventory/!svn/ver/2333/public/admin/app/modules/modal/typeahead_supplier_bank_2.html
+END
+picking_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/picking_void.html
+END
+typeahead_bank_account_bank.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2351/public/admin/app/modules/modal/typeahead_bank_account_bank.html
+END
+account_payable_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2762/public/admin/app/modules/modal/account_payable_confirm.html
+END
+typeahead_picking_employee.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2163/public/admin/app/modules/modal/typeahead_picking_employee.html
+END
+typeahead_picking_so.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2144/public/admin/app/modules/modal/typeahead_picking_so.html
+END
+invoice_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/invoice_confirm.html
+END
+typeahead_customer_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2355/public/admin/app/modules/modal/typeahead_customer_city.html
+END
+invoice_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/invoice_void.html
+END
+typeahead_packing_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2137/public/admin/app/modules/modal/typeahead_packing_item.html
+END
+sales_order_list_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/sales_order_list_void.html
+END
+typeahead_supplier_city.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2332/public/admin/app/modules/modal/typeahead_supplier_city.html
+END
+typeahead_journal_coa.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2569/public/admin/app/modules/modal/typeahead_journal_coa.html
+END
+typeahead_return_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2219/public/admin/app/modules/modal/typeahead_return_item.html
+END
+typeahead_supplier_journal.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2504/public/admin/app/modules/modal/typeahead_supplier_journal.html
+END
+typeahead_ap_payment.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2762/public/admin/app/modules/modal/typeahead_ap_payment.html
+END
+purchase_list_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/purchase_list_confirm.html
+END
+typeahead_picking_item.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2149/public/admin/app/modules/modal/typeahead_picking_item.html
+END
+typeahead_so_salesman.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2241/public/admin/app/modules/modal/typeahead_so_salesman.html
+END
+typeahead_customer_province.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2355/public/admin/app/modules/modal/typeahead_customer_province.html
+END
+journal_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/exoduzInventory/!svn/ver/2650/public/admin/app/modules/modal/journal_void.html
+END
+typeahead_po_purchase.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2051/public/admin/app/modules/modal/typeahead_po_purchase.html
+END
+return_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/return_confirm.html
+END
+typeahead_item_location_warehouse.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/exoduzInventory/!svn/ver/2294/public/admin/app/modules/modal/typeahead_item_location_warehouse.html
+END
+typeahead_supplier_province.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2332/public/admin/app/modules/modal/typeahead_supplier_province.html
+END
+typeahead_item_store.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2308/public/admin/app/modules/modal/typeahead_item_store.html
+END
+purchase_approval_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/purchase_approval_void.html
+END
+typeahead_billing_payment.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/exoduzInventory/!svn/ver/2444/public/admin/app/modules/modal/typeahead_billing_payment.html
+END
+typeahead_vehicle_color.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2335/public/admin/app/modules/modal/typeahead_vehicle_color.html
+END
+typeahead_customer_regency.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2355/public/admin/app/modules/modal/typeahead_customer_regency.html
+END
+typeahead_so_unit.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2252/public/admin/app/modules/modal/typeahead_so_unit.html
+END
+storing_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/storing_void.html
+END
+typeahead_supplier_coa.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2504/public/admin/app/modules/modal/typeahead_supplier_coa.html
+END
+account_payable_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2762/public/admin/app/modules/modal/account_payable_void.html
+END
+typeahead_item_others_brand.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2298/public/admin/app/modules/modal/typeahead_item_others_brand.html
+END
+invoice_return_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/invoice_return_void.html
+END
+typeahead_item_category.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2308/public/admin/app/modules/modal/typeahead_item_category.html
+END
+typeahead_ap_bank.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2762/public/admin/app/modules/modal/typeahead_ap_bank.html
+END
+typeahead_supplier_purchase.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2334/public/admin/app/modules/modal/typeahead_supplier_purchase.html
+END
+typeahead_ar_bank.html
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/exoduzInventory/!svn/ver/2653/public/admin/app/modules/modal/typeahead_ar_bank.html
+END
+typeahead_supplier_bank.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2333/public/admin/app/modules/modal/typeahead_supplier_bank.html
+END
+sales_order_approval_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/sales_order_approval_confirm.html
+END
+typeahead_return_po_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/exoduzInventory/!svn/ver/2898/public/admin/app/modules/modal/typeahead_return_po_supplier.html
+END
+typeahead_return_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/exoduzInventory/!svn/ver/2213/public/admin/app/modules/modal/typeahead_return_supplier.html
+END
+purchase_list_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/purchase_list_void.html
+END
+typeahead_company_po.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2499/public/admin/app/modules/modal/typeahead_company_po.html
+END
+typeahead_item_subcategory .html
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/exoduzInventory/!svn/ver/2308/public/admin/app/modules/modal/typeahead_item_subcategory%20.html
+END
+typeahead_picking_supplier.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2153/public/admin/app/modules/modal/typeahead_picking_supplier.html
+END
+typeahead_coa_parent.html
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/exoduzInventory/!svn/ver/2410/public/admin/app/modules/modal/typeahead_coa_parent.html
+END
+typeahead_picking_location.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/exoduzInventory/!svn/ver/2157/public/admin/app/modules/modal/typeahead_picking_location.html
+END
+typeahead_return_po_unit.html
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/exoduzInventory/!svn/ver/2909/public/admin/app/modules/modal/typeahead_return_po_unit.html
+END
+typeahead_return_unit.html
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/exoduzInventory/!svn/ver/2223/public/admin/app/modules/modal/typeahead_return_unit.html
+END
+receive_void.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/receive_void.html
+END
+typeahead_picking_unit.html
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/exoduzInventory/!svn/ver/2162/public/admin/app/modules/modal/typeahead_picking_unit.html
+END
+typeahead_company_selling.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/exoduzInventory/!svn/ver/2495/public/admin/app/modules/modal/typeahead_company_selling.html
+END
+invoice_return_confirm.html
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/exoduzInventory/!svn/ver/3/public/admin/app/modules/modal/invoice_return_confirm.html
+END
+typeahead_company_lost_walk.html
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/exoduzInventory/!svn/ver/2495/public/admin/app/modules/modal/typeahead_company_lost_walk.html
+END
+typeahead_item_location.html
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/exoduzInventory/!svn/ver/2308/public/admin/app/modules/modal/typeahead_item_location.html
+END
